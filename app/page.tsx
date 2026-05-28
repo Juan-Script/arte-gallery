@@ -21,9 +21,9 @@ export default async function HomePage() {
           style={{ backgroundImage: `url(https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=1600&q=80)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent" />
-        <div className="relative z-10 max-w-7xl mx-auto px-8 pb-20 w-full">
-          <p className="text-xs tracking-[0.3em] uppercase text-stone-300 mb-4">Obra 1962–1999</p>
-          <h1 className="font-serif text-6xl md:text-8xl text-white leading-none mb-6">Art Gallery</h1>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 pb-12 md:pb-20 w-full">
+          <p className="text-xs tracking-[0.3em] uppercase text-stone-300 mb-3 md:mb-4">Obra 1962–1999</p>
+          <h1 className="font-serif text-5xl md:text-8xl text-white leading-none mb-4 md:mb-6">Art Gallery</h1>
           <p className="text-stone-300 text-sm tracking-wide max-w-md leading-relaxed">
             Cinco décadas de pintura abstracta. Una voz singular en el arte español contemporáneo.
           </p>
@@ -31,14 +31,14 @@ export default async function HomePage() {
       </section>
 
       {/* Obras destacadas */}
-      <section className="max-w-7xl mx-auto px-8 py-24">
-        <div className="flex items-baseline justify-between mb-12">
-          <h2 className="font-serif text-3xl text-stone-900">Obras recientes</h2>
+      <section className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
+        <div className="flex items-baseline justify-between mb-8 md:mb-12">
+          <h2 className="font-serif text-2xl md:text-3xl text-stone-900">Obras recientes</h2>
           <Link href="/obras" className="text-xs tracking-[0.2em] uppercase text-stone-400 hover:text-stone-900 transition-colors">
             Ver todas →
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {artworks.map((artwork: Artwork) => (
             <Link key={artwork.id} href="/obras" className="group">
               <div className="aspect-[4/5] overflow-hidden bg-stone-100 mb-4 relative">
@@ -56,17 +56,17 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-8"><hr className="border-stone-200" /></div>
+      <div className="max-w-7xl mx-auto px-6 md:px-8"><hr className="border-stone-200" /></div>
 
       {/* Noticias */}
-      <section className="max-w-7xl mx-auto px-8 py-24">
-        <div className="flex items-baseline justify-between mb-12">
-          <h2 className="font-serif text-3xl text-stone-900">Noticias</h2>
+      <section className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
+        <div className="flex items-baseline justify-between mb-8 md:mb-12">
+          <h2 className="font-serif text-2xl md:text-3xl text-stone-900">Noticias</h2>
           <Link href="/noticias" className="text-xs tracking-[0.2em] uppercase text-stone-400 hover:text-stone-900 transition-colors">
             Ver todas →
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           {news.map((item: NewsItem) => (
             <article key={item.id} className="group">
               {item.image && (
@@ -90,9 +90,9 @@ export default async function HomePage() {
       </section>
 
       {/* Quote */}
-      <section className="bg-stone-900 py-24 px-8">
+      <section className="bg-stone-900 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-serif text-2xl md:text-3xl text-stone-100 leading-relaxed italic">
+          <p className="font-serif text-xl md:text-3xl text-stone-100 leading-relaxed italic">
             "Pintar es una forma de callar el mundo para poder escucharlo."
           </p>
           <p className="text-xs tracking-[0.3em] uppercase text-stone-500 mt-6">Art Gallery, 1988</p>

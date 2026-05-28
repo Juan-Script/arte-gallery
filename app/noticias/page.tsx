@@ -10,13 +10,13 @@ export default async function NoticiasPage() {
 
   return (
     <PublicLayout>
-      <div className="max-w-7xl mx-auto px-8 py-16">
-        <h1 className="font-serif text-4xl text-stone-900 mb-14">Noticias</h1>
+      <div className="max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-16">
+        <h1 className="font-serif text-3xl md:text-4xl text-stone-900 mb-10 md:mb-14">Noticias</h1>
         <div className="space-y-0">
           {news.map((item: NewsItem, i: number) => (
             <article
               key={item.id}
-              className={`grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 py-12 ${
+              className={`grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 md:gap-10 py-10 md:py-12 ${
                 i < news.length - 1 ? 'border-b border-stone-200' : ''
               }`}
             >
@@ -29,7 +29,7 @@ export default async function NoticiasPage() {
                 <p className="text-xs tracking-[0.2em] uppercase text-stone-400 mb-3">
                   {item.category} · {new Date(item.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}
                 </p>
-                <h2 className="font-serif text-2xl text-stone-900 leading-snug mb-4">{item.title}</h2>
+                <h2 className="font-serif text-xl md:text-2xl text-stone-900 leading-snug mb-4">{item.title}</h2>
                 <p className="text-sm text-stone-500 leading-relaxed">{item.excerpt}</p>
                 <p className="text-sm text-stone-600 leading-relaxed mt-4">{item.content}</p>
               </div>

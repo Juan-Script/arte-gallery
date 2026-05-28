@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { logout } from '@/lib/auth'
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -8,9 +9,16 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <span className="font-serif text-lg">Art Gallery</span>
           <span className="text-stone-500 text-xs tracking-widest uppercase">/ Admin</span>
         </div>
-        <Link href="/" className="text-xs tracking-[0.15em] uppercase text-stone-400 hover:text-white transition-colors">
-          ← Ver web
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link href="/" className="text-xs tracking-[0.15em] uppercase text-stone-400 hover:text-white transition-colors">
+            ← Ver web
+          </Link>
+          <form action={logout}>
+            <button type="submit" className="text-xs tracking-[0.15em] uppercase text-stone-500 hover:text-red-400 transition-colors">
+              Cerrar sesión
+            </button>
+          </form>
+        </div>
       </header>
 
       <div className="bg-white border-b border-stone-200 px-8">
