@@ -5,7 +5,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     <div className="min-h-screen bg-stone-100">
       <header className="bg-stone-900 text-stone-100 px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="font-serif text-lg">Elena Vidal</span>
+          <span className="font-serif text-lg">Art Gallery</span>
           <span className="text-stone-500 text-xs tracking-widest uppercase">/ Admin</span>
         </div>
         <Link href="/" className="text-xs tracking-[0.15em] uppercase text-stone-400 hover:text-white transition-colors">

@@ -23,7 +23,7 @@ export default async function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 pb-20 w-full">
           <p className="text-xs tracking-[0.3em] uppercase text-stone-300 mb-4">Obra 1962–1999</p>
-          <h1 className="font-serif text-6xl md:text-8xl text-white leading-none mb-6">Elena Vidal</h1>
+          <h1 className="font-serif text-6xl md:text-8xl text-white leading-none mb-6">Art Gallery</h1>
           <p className="text-stone-300 text-sm tracking-wide max-w-md leading-relaxed">
             Cinco décadas de pintura abstracta. Una voz singular en el arte español contemporáneo.
           </p>
@@ -95,7 +95,7 @@ export default async function HomePage() {
           <p className="font-serif text-2xl md:text-3xl text-stone-100 leading-relaxed italic">
             "Pintar es una forma de callar el mundo para poder escucharlo."
           </p>
-          <p className="text-xs tracking-[0.3em] uppercase text-stone-500 mt-6">Elena Vidal, 1988</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-stone-500 mt-6">Art Gallery, 1988</p>
         </div>
       </section>
     </PublicLayout>

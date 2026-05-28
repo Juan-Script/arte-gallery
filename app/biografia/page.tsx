@@ -21,30 +21,14 @@ export default async function BiografiaPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/30 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-8 pb-16 w-full">
-          <h1 className="font-serif text-5xl md:text-7xl text-white">Elena Vidal</h1>
-          <p className="text-stone-300 text-sm tracking-widest uppercase mt-2">Nació en Madrid, 1940</p>
+          <h1 className="font-serif text-5xl md:text-7xl text-white">Biografía</h1>
         </div>
       </section>
 
       {/* Bio texto */}
       <section className="max-w-4xl mx-auto px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
-          <div className="space-y-6">
-            {[
-              { label: 'Nacimiento', value: 'Madrid, 1940' },
-              { label: 'Formación', value: 'E. Bellas Artes de San Fernando, Madrid\nAcadémie des Beaux-Arts, París' },
-              { label: 'Premios', value: 'Premio Nacional de Artes Plásticas 2024\nPremio Velázquez 2009\nBeca Guggenheim 1970' },
-              { label: 'Colecciones', value: 'MoMA, Nueva York\nMuseo Reina Sofía, Madrid\nCentre Pompidou, París\nTate Modern, Londres' },
-            ].map(({ label, value }) => (
-              <div key={label}>
-                <p className="text-xs tracking-[0.2em] uppercase text-stone-400 mb-1">{label}</p>
-                {value.split('\n').map((line, i) => (
-                  <p key={i} className="text-sm text-stone-700">{line}</p>
-                ))}
-              </div>
-            ))}
-          </div>
-          <div className="space-y-6 text-stone-600 text-sm leading-loose">
+          <div className="space-y-6 text-stone-600 text-sm leading-loose col-span-full">
             {paragraphs.map((p: string, i: number) => <p key={i}>{p}</p>)}
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-stone-50/90 backdrop-blur-sm border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-8 h-16 flex items-center justify-between">
         <Link href="/" className="font-serif text-lg tracking-wide text-stone-900">
-          Elena Vidal
+          Art Gallery
         </Link>
 
         <nav className="flex items-center gap-10">

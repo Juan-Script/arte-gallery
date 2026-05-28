@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Elena Vidal — Artista',
+  title: 'Art Gallery — Artista',
   description: 'Cinco décadas de pintura abstracta. Una voz singular en el arte español contemporáneo.',
 }
 
