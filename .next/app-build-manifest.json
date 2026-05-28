@@ -1,0 +1,90 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/app/_not-found/page-e563aba1ad3a4dc2.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/css/c2df64a5b7d9475c.css",
+      "static/chunks/app/layout-0b0c3833875fba97.js"
+    ],
+    "/biografia/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/972-c06290af4feea3e4.js",
+      "static/chunks/app/biografia/page-b1fb95be66ac6fc9.js"
+    ],
+    "/noticias/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/972-c06290af4feea3e4.js",
+      "static/chunks/616-9ab1c91e30d7065d.js",
+      "static/chunks/app/noticias/page-72d978f78cfe0a5b.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/972-c06290af4feea3e4.js",
+      "static/chunks/616-9ab1c91e30d7065d.js",
+      "static/chunks/app/page-a0dc4204c35aaa17.js"
+    ],
+    "/obras/[[...decade]]/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/972-c06290af4feea3e4.js",
+      "static/chunks/616-9ab1c91e30d7065d.js",
+      "static/chunks/app/obras/[[...decade]]/page-00a8710e45e6c437.js"
+    ],
+    "/admin/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/app/admin/page-ed9757fae1020a67.js"
+    ],
+    "/admin/layout": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/972-c06290af4feea3e4.js",
+      "static/chunks/app/admin/layout-24e2a4ac3d069fd8.js"
+    ],
+    "/admin/noticias/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/app/admin/noticias/page-c765cfaf2b65c7e6.js"
+    ],
+    "/admin/biografia/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/app/admin/biografia/page-466425e87ecaca8c.js"
+    ],
+    "/admin/obras/page": [
+      "static/chunks/webpack-926e2e372bb8a9b1.js",
+      "static/chunks/fd9d1056-19429b75bd7a3953.js",
+      "static/chunks/117-744b87d66d2c0bad.js",
+      "static/chunks/main-app-e66f449897e7770b.js",
+      "static/chunks/app/admin/obras/page-003ae96e24005d21.js"
+    ]
+  }
+}

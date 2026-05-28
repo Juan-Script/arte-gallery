@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+model Artwork {
+  id          String   @id @default(cuid())
+  title       String
+  year        Int
+  decade      Int
+  technique   String
+  dimensions  String
+  image       String
+  description String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model NewsItem {
+  id        String   @id @default(cuid())
+  title     String
+  date      DateTime
+  category  String
+  excerpt   String
+  content   String
+  image     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Biography {
+  id        String   @id @default(cuid())
+  body      String   // Rich text / markdown
+  updatedAt DateTime @updatedAt
+}
+
+model TimelineEntry {
+  id    String @id @default(cuid())
+  year  String
+  text  String
+  order Int    @default(0)
+}

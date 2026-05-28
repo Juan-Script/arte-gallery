@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-xs tracking-[0.2em] uppercase font-medium text-stone-500 hover:text-stone-900 transition-colors duration-200;
+  }
+  .admin-input {
+    @apply w-full border border-stone-200 px-3 py-2 text-sm text-stone-900 focus:outline-none focus:border-stone-500 bg-stone-50;
+  }
+  .admin-label {
+    @apply block text-xs tracking-[0.15em] uppercase text-stone-400 mb-1.5;
+  }
+  .btn-primary {
+    @apply bg-stone-900 text-white text-xs tracking-[0.15em] uppercase px-5 py-2.5 hover:bg-stone-700 transition-colors disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply text-xs tracking-[0.15em] uppercase px-5 py-2.5 border border-stone-200 text-stone-600 hover:bg-stone-100 transition-colors;
+  }
+}
