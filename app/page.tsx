@@ -22,9 +22,9 @@ export default async function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 pb-12 md:pb-20 w-full">
-          <p className="text-xs tracking-[0.3em] uppercase text-stone-300 mb-3 md:mb-4">Obra 1962–1999</p>
-          <h1 className="font-serif text-5xl md:text-8xl text-white leading-none mb-4 md:mb-6">Art Gallery</h1>
-          <p className="text-stone-300 text-sm tracking-wide max-w-md leading-relaxed">
+          <p className="text-xs tracking-[0.3em] uppercase text-red-300 mb-3 md:mb-4">Obra 1962–1999</p>
+          <h1 className="font-serif text-5xl md:text-8xl text-red-500 leading-none mb-4 md:mb-6">Art Gallery</h1>
+          <p className="text-red-200 text-sm tracking-wide max-w-md leading-relaxed">
             Cinco décadas de pintura abstracta. Una voz singular en el arte español contemporáneo.
           </p>
         </div>
@@ -33,8 +33,8 @@ export default async function HomePage() {
       {/* Obras destacadas */}
       <section className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
         <div className="flex items-baseline justify-between mb-8 md:mb-12">
-          <h2 className="font-serif text-2xl md:text-3xl text-stone-900">Obras recientes</h2>
-          <Link href="/obras" className="text-xs tracking-[0.2em] uppercase text-stone-400 hover:text-stone-900 transition-colors">
+          <h2 className="font-serif text-2xl md:text-3xl text-red-700">Obras recientes</h2>
+          <Link href="/obras" className="text-xs tracking-[0.2em] uppercase text-red-500 hover:text-red-700 transition-colors">
             Ver todas →
           </Link>
         </div>
@@ -49,8 +49,8 @@ export default async function HomePage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <p className="font-serif text-base text-stone-900">{artwork.title}</p>
-              <p className="text-xs text-stone-400 mt-1">{artwork.year} · {artwork.technique}</p>
+              <p className="font-serif text-base text-red-700">{artwork.title}</p>
+              <p className="text-xs text-red-500 mt-1">{artwork.year} · {artwork.technique}</p>
             </Link>
           ))}
         </div>
@@ -61,8 +61,8 @@ export default async function HomePage() {
       {/* Noticias */}
       <section className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
         <div className="flex items-baseline justify-between mb-8 md:mb-12">
-          <h2 className="font-serif text-2xl md:text-3xl text-stone-900">Noticias</h2>
-          <Link href="/noticias" className="text-xs tracking-[0.2em] uppercase text-stone-400 hover:text-stone-900 transition-colors">
+          <h2 className="font-serif text-2xl md:text-3xl text-red-700">Noticias</h2>
+          <Link href="/noticias" className="text-xs tracking-[0.2em] uppercase text-red-500 hover:text-red-700 transition-colors">
             Ver todas →
           </Link>
         </div>
@@ -79,11 +79,11 @@ export default async function HomePage() {
                   />
                 </div>
               )}
-              <p className="text-xs tracking-[0.2em] uppercase text-stone-400 mb-2">
+              <p className="text-xs tracking-[0.2em] uppercase text-red-500 mb-2">
                 {item.category} · {new Date(item.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long' })}
               </p>
-              <h3 className="font-serif text-xl text-stone-900 leading-snug mb-2">{item.title}</h3>
-              <p className="text-sm text-stone-500 leading-relaxed">{item.excerpt}</p>
+              <h3 className="font-serif text-xl text-red-700 leading-snug mb-2">{item.title}</h3>
+              <p className="text-sm text-red-600 leading-relaxed">{item.excerpt}</p>
             </article>
           ))}
         </div>
@@ -92,10 +92,10 @@ export default async function HomePage() {
       {/* Quote */}
       <section className="bg-stone-900 py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-serif text-xl md:text-3xl text-stone-100 leading-relaxed italic">
+          <p className="font-serif text-xl md:text-3xl text-red-100 leading-relaxed italic">
             "Pintar es una forma de callar el mundo para poder escucharlo."
           </p>
-          <p className="text-xs tracking-[0.3em] uppercase text-stone-500 mt-6">Art Gallery, 1988</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-red-400 mt-6">Art Gallery, 1988</p>
         </div>
       </section>
     </PublicLayout>
